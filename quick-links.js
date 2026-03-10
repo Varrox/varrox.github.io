@@ -7,7 +7,7 @@ const links = {
     "Non-Existence" : "https://realbucketofchicken.github.io/nonexistance/",
     "femtanyl" : "https://soundcloud.com/femtanyl",
     "tyler-the-creator" : "https://soundcloud.com/tylerthecreatorofficial",
-    "golemm" : ""
+    "golemm" : "https://soundcloud.com/golemm/"
 }
 
 const class_name = "quicklink"

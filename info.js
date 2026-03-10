@@ -1,10 +1,12 @@
 const birthday = "March 11, 2010"
 
+const boymode = false;
+
 const info = {
-    name: "aria",
+    name: !boymode ? "aria" : "alex",
     birthday: birthday,
     age: get_age(birthday),
-    pronouns: "she/her"
+    pronouns: !boymode ? "she/her" : "he/him"
 }
 
 const experience = {
@@ -36,7 +38,6 @@ function apply_info() {
     }
 
     var experiences = document.getElementsByClassName("exp")
-    var pronouns = info.pronouns
     for(var i = 0; i < experiences.length; i++){
         var a = experience[experiences[i].classList[1]];
         experiences[i].innerText = a + (a > 1 ? " years" : " year");

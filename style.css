@@ -135,7 +135,8 @@ h1{
 @keyframes fade_out {
     0% {opacity: 0%;}
     15% {opacity: 100%;}
-    50% {opacity: 100%;}
+    30% {opacity: 100%;}
+    60% {opacity: 0%;}
     100% {opacity: 0%;}
 }
 
@@ -144,7 +145,7 @@ h1{
     transform: rotate(0deg);
   }
   100% {
-    top: 50%;
+    top: 30%;
     transform: rotate(360deg);
   }
 }
@@ -153,5 +154,5 @@ h1{
     position: absolute;
     width: 10px;
     height: 10px;
-    animation: fade_out 3s, confetti-fall 3s;
+    animation: fade_out 2s, confetti-fall 2s;
 }

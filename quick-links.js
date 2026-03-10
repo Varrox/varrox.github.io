@@ -1,13 +1,15 @@
+
+
 const links = {
     "godot" : "https://godotengine.org",
     "youtube" : "https://youtube.com/@Varrox",
     "github" : "https://github.com/varrox",
-    "soundcloud" : "https://soundcloud.com/",
     "bluesky" : "https://bsky.app/profile/varrox.bsky.social",
     "Non-Existence" : "https://realbucketofchicken.github.io/nonexistance/",
     "femtanyl" : "https://soundcloud.com/femtanyl",
     "tyler-the-creator" : "https://soundcloud.com/tylerthecreatorofficial",
-    "golemm" : "https://soundcloud.com/golemm/"
+    "golemm" : "https://soundcloud.com/golemm/",
+    "email" : "mailto:info@example.com?subject=Inquiry&body=Hello, I would like to know more about..."
 }
 
 const class_name = "quicklink"

@@ -4,6 +4,7 @@ const boymode = false;
 
 const info = {
     name: !boymode ? "aria" : "alex",
+    last_name: "greene",
     birthday: birthday,
     age: get_age(birthday),
     pronouns: !boymode ? "she/her" : "he/him"
@@ -20,7 +21,7 @@ const experience = {
 
 function apply_info() {
     var names = document.getElementsByClassName("name")
-    var name = info.name
+    var name = info.name + " " + info.last_name
     for(var i = 0; i < names.length; i++){
         names[i].innerText = name
     }

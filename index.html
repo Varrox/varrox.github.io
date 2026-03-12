@@ -42,6 +42,18 @@
                 <li>Game engine : <span class="quicklink godot">Godot</span></li>
             </ul>
             <hr>
+            <canvas id="donut-ascii" width="128" height="128"></canvas>
+            <script>
+                const canvas = document.getElementById("donut-ascii");
+                var ctx = canvas.getContext("2d");
+                var img = new Image(); // Create new img element
+
+                img.addEventListener("load", () => {
+                ctx.drawImage(img, 0, 0);
+                });
+
+                img.src = "Assets/3D/0000.png";
+            </script>
             <div class="right_panel">
                 <p>
                     Things I have quite a lot of experience in:

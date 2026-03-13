@@ -112,6 +112,10 @@ h1{
     flex-direction: row;
 }
 
+.col_container>.panel{
+    margin-left: auto;
+}
+
 .left_panel, .right_panel, .panel{
     margin-top: 25px; 
     margin-bottom: 25px; 
@@ -206,6 +210,10 @@ footer {
     .col_container>*{
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .col_container>.panel{
+        margin-left: 0%;
     }
 
     #donut-ascii{

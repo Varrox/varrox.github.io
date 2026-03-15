@@ -1,3 +1,30 @@
+.codesnip
+{
+    font-family: monospace;
+    background-color: rgb(85, 84, 84);
+
+    padding: 1px 3px;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: rgb(110, 110, 110);
+    border-width: 1px;
+    font-size:medium;
+}
+
+.codesnip:hover{
+    background-color: rgb(38, 38, 38);
+}
+
+.codesnip code{
+    background-color: inherit;
+    color:white;
+}
+
+.codesnip:active
+{
+    background-color: rgb(83, 83, 83);
+}
+
 .code
 {
     font-family: monospace;
@@ -11,34 +38,22 @@
     
     overflow:auto;
     cursor:text;
-}
 
-.codesnip:hover{
-    background-color: rgb(38, 38, 38);
-}
-
-.codesnip code{
-    background-color: inherit;
-    color:lightcoral;
-}
-
-.codesnip:active
-{
-    background-color: rgb(83, 83, 83);
+    margin: 0px;
 }
 
 .copy
 {
-    float: right;
+    position: absolute;
     
     color:white;
     background-color: rgb(94, 94, 94);
     border-style: none;
     border-radius: 2px;
     padding: 5px;
-
+    
     font-size: large;
-
+    
     opacity:0;
     transition: opacity 0.1s;
 }
@@ -55,18 +70,6 @@
 
 .code:hover .copy {
     opacity:1;
-}
-
-.codesnip
-{
-    font-family: monospace;
-    background-color: rgb(49, 49, 49);
-
-    padding: 2px 5px;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: rgb(110, 110, 110);
-    border-width: 1px;
 }
 
 .indent

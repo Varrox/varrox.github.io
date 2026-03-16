@@ -11,7 +11,7 @@ async function main() {
     await apply_md()
 
     setup_code_areas()
-	play_animation()
+	//play_animation()
 }
 
 let code_snips = {}

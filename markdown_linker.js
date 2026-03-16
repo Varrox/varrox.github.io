@@ -35,7 +35,8 @@ async function change_to_md(element){
 
         element.innerHTML = convert_md_to_html(markdownText);
 		
-		add_link(element, mds[linkKey].link)
+		add_link(element, mds[linkKey].link);
+        remove_afterhead(element);
     } catch (error) {
         console.error("Fetch error:", error);
         element.innerHTML = "<em>Failed to load content.</em>";
@@ -60,5 +61,21 @@ function add_link(element, link){
 
 			break;
 		}
+	}
+}
+
+function remove_afterhead(element){
+    var c = 0;
+	for(var i = 0; i < element.innerHTML.length; i++){
+		var header = element.innerHTML.substr(i, '<h1>'.length) == '<h1>';
+        
+        if (header) {
+            c++;
+            if (c > 1){
+                element.innerHTML = element.innerHTML.substr(0, i - 1);
+                break;
+            }
+            
+        }
 	}
 }

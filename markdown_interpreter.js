@@ -326,15 +326,12 @@ function python(text)
                 var word = ""
                 for(var j = 0; j < python_keywords; j++){
                     var sl = text.slice(i, python_keywords[j].length)
-                    console.log(sl)
                     if(sl == python_keywords[j])
                     {
                         word = python_keywords[j]
                         break;
                     }
                 }
-
-                console.log(word)
 
                 if(word != ""){
                     inserts.push([i, starter + " keyword\">"])

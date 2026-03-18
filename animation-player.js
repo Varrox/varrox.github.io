@@ -19,7 +19,7 @@ canvas.height = animation_info.size_y;
 
 const ctx = canvas.getContext("2d");
 
-const ascii_chars = ".:-=+*#%@";
+const ascii_chars = "@@@@@#%";
 
 async function get_images(){
     const promises = [];
@@ -87,7 +87,7 @@ function create_ascii() {
         var lightness = Math.min(Math.max(Math.floor(magnitude * cs), 0), cs);
         ascii_text += a > 0 ? (s + rgb + se + ascii_chars.substring(lightness, lightness + 1) + e) : " ";
 
-        if((i / 4) % canvas.width == 0){
+        if(((i / 4) + 1) % canvas.width == 0){
             ascii_text += "<br>";
         }
     }

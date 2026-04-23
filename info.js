@@ -7,7 +7,7 @@ const info = {
     last_name: "greene",
     birthday: birthday,
     age: get_age(birthday),
-    pronouns: !boymode ? "she/her" : "he/him"
+    pronouns: !boymode ? "she/her/they" : "he/him"
 }
 
 const experience = {

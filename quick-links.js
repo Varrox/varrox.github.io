@@ -5,6 +5,7 @@ const links = {
     "bluesky" : "https://bsky.app/profile/varrox.bsky.social",
     "Non-Existence" : "https://realbucketofchicken.github.io/nonexistance/",
     "femtanyl" : "https://soundcloud.com/femtanyl",
+    "aphex-twin" : "https://soundcloud.com/richarddjames",
     "tyler-the-creator" : "https://soundcloud.com/tylerthecreatorofficial",
     "golemm" : "https://soundcloud.com/golemm/",
     "email" : "mailto:info@example.com?subject=Inquiry&body=Hello, I would like to know more about..."

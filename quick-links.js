@@ -1,3 +1,5 @@
+const email = "ariafrankgreene@gmail.com"
+
 const links = {
     "godot" : "https://godotengine.org",
     "youtube" : "https://youtube.com/@Varrox",
@@ -8,7 +10,7 @@ const links = {
     "aphex-twin" : "https://soundcloud.com/richarddjames",
     "tyler-the-creator" : "https://soundcloud.com/tylerthecreatorofficial",
     "golemm" : "https://soundcloud.com/golemm/",
-    "email" : "mailto:info@example.com?subject=Inquiry&body=Hello, I would like to know more about..."
+    "email" : `mailto:${email}?subject=Inquiry&body=Hello, I'd like to contact you about your cars extended warranty...`
 }
 
 function apply_links()

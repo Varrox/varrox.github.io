@@ -15,14 +15,11 @@ a, button{
     
     top: 0;
     left: 0;
-    height: 300%;
     width: 100%;
-    
+    bottom: 0;
     margin: 0;
     padding: 0;
-    
     z-index: -1; /* Pushes the entire layer behind everything else */
-
     overflow-x: hidden;
 }
 
@@ -62,7 +59,7 @@ a, button{
 
 html, body{
     cursor: crosshair;
-    height: 200%;
+    min-height: 100vh;
     width: 100%;
     flex-direction: column;
     display: flex;
@@ -71,6 +68,10 @@ html, body{
     padding: 0;
     
     font-size: 120%;
+}
+
+body {
+    position: relative;
 }
 
 .content{
@@ -194,7 +195,7 @@ hr{
     border-style: double;
 }
 
-@media only screen and (max-width: 9.99in) /* Mobile */
+@media only screen and (max-width: 12.99in) /* Mobile */
 {
     footer{
         font-size: 80%;
@@ -232,7 +233,7 @@ hr{
     }
 }
 
-@media only screen and (min-width: 10in) 
+@media only screen and (min-width: 13in) 
 {
     .left_panel{
         margin-right:49%; 

@@ -1,12 +1,13 @@
 const mds = {
     "simplesound" : {lnk: "https://raw.githubusercontent.com/Varrox/simplesound/main/README.md", link:"https://github.com/Varrox/simplesound/", img: ""},
     "quick-add-menu" : {lnk: "https://raw.githubusercontent.com/Varrox/Quick-Add-Menu/main/README.md", link:"https://github.com/Varrox/Quick-Add-Menu/", img: ""},
-    "ascii-renderer" : {lnk: "https://raw.githubusercontent.com/Varrox/ASCII-Renderer/main/README.md", link:"https://github.com/Varrox/ASCII-Renderer/", img: ""}
+    "ascii-renderer" : {lnk: "https://raw.githubusercontent.com/Varrox/ASCII-Renderer/main/README.md", link:"https://github.com/Varrox/ASCII-Renderer/", img: ""},
+    "self" : {lnk: "https://raw.githubusercontent.com/Varrox/varrox.github.io/main/README.md", link:"https://github.com/Varrox/varrox.github.io/", img: ""}
 }
 
 async function apply_md()
 {
-    const elements = document.getElementsByClassName("md")
+    const elements = document.getElementsByClassName("md");
     for(var i = 0; i < elements.length; i++){
         await change_to_md(elements[i]);
     }
@@ -58,6 +59,11 @@ function add_link(element, link){
 
 			header.parentNode.insertBefore(a, header);
 			a.appendChild(header);
+
+            let icon = document.createElement("img");
+            icon.src = "Assets/Images/link.png";
+            icon.classList.add("link_icon");
+            a.appendChild(icon);
 
 			break;
 		}

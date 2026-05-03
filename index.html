@@ -21,30 +21,37 @@
         <div class="content">
             <button class="shake confetti" style="font-size: 100%;"><h1>welcome !!1!</h1></button>
 
-            <p>
-                Hello, my name is <span class="name"></span>, I am a <span class="age"></span> year old Godot game developer. <br>
-                I primarily work on FPS games and VR projects. <br>
-                And also sometimes dabble in software development too :p
-            </p>
+            <hr>
 
-            <hr class="half-width" style="mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));">
-
-            <ul class="info">
-                <li>Age : <span class="age"></span></li>
-                <li>Pronouns : <span class="pronouns"></span></li>
-                <li>Favorites : {
-                    <ul>
-                        <li>Game : The Finals</li>
-                        <li>Artists : <div class="quicklink femtanyl">femtanyl</div>; <div class="quicklink tyler-the-creator">Tyler, The Creator</div>; <span class="quicklink golemm">golemm</span>; <span class="quicklink aphex-twin">aphextwin</span>;</li>
-                        <li>VR Game : Half-Life: Alyx</li>
+            <div class="col_container" id="aboutme">
+                <div class="left_panel" style="margin:auto; margin-left: 0;">
+                    <h2>README.md</h2>
+                    <p>
+                        Hello, my name is <span class="name"></span>, I am a <span class="age"></span> year old Godot game developer. <br>
+                        I primarily work on FPS games and VR projects. <br>
+                        And also sometimes dabble in software development too :p
+                    </p>
+                    <hr style="mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));">
+                    <ul class="info">
+                        <li>Age : <span class="age"></span></li>
+                        <li>Pronouns : <span class="pronouns"></span></li>
+                        <li>Favorites : {
+                            <ul>
+                                <li>Game : The Finals</li>
+                                <li>Artists : <div class="quicklink femtanyl">femtanyl</div>; <div class="quicklink tyler-the-creator">Tyler, The Creator</div>; <span class="quicklink golemm">golemm</span>; <span class="quicklink aphex-twin">aphextwin</span>;</li>
+                                <li>VR Game : Half-Life: Alyx</li>
+                            </ul>
+                            }
+                        </li>
+                        <li>Virtual Reality interface : Valve Index && Quest 3</li>
+                        <li>Game engine : <span class="quicklink godot">Godot</span></li>
                     </ul>
-                }
-                </li>
-                <li>Virtual Reality interface : Valve Index && Quest 3</li>
-                <li>Game engine : <span class="quicklink godot">Godot</span></li>
-            </ul>
-            <hr class="half-width" style="margin-left: auto; mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));">
-            <div class="col_container">
+                </div>
+            </div>
+            
+            <hr>
+
+            <div class="col_container" id="experience">
                 <p id="donut-ascii" style="font-size: 30px; font-family: monospace; white-space: pre; line-height: 15px; user-select: none;"></p>
                 <canvas id="donut-ascii-canvas" width="64" height="64" style="position: absolute; width:0px; height: 0px;"><script src="animation-player.js"></script></canvas>
                 <div class="panel">
@@ -63,17 +70,22 @@
             </div>
             
             <hr class="half-width" style="mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));">
-            <h1>
+            <div id="projects">
+                <h1>
                 Here are some of my projects:
-            </h1>
-            <div class="left_panel">
-                <div class="md simplesound"></div>
-            </div>
-            <div class="right_panel">
-                <div class="md quick-add-menu"></div>
-            </div>
-            <div class="left_panel">
-                <div class="md ascii-renderer"></div>
+                </h1>
+                <div class="left_panel">
+                    <div class="md simplesound"></div>
+                </div>
+                <div class="right_panel">
+                    <div class="md quick-add-menu"></div>
+                </div>
+                <div class="left_panel">
+                    <div class="md ascii-renderer"></div>
+                </div>
+                <div class="right_panel">
+                    <div class="md self"></div>
+                </div>
             </div>
         </div>
     </body>

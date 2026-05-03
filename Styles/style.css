@@ -93,10 +93,15 @@ h1, h2, h3, h4, h5, h6{
     font-size: inherit;
     background-color: transparent;
     transition: font-size 0.15s, background-color 0.15s;
+    padding-top: 3px;
+    padding-bottom: 0px;
+    transition: padding-top ease 0.1s, padding-bottom ease 0.1s;
 }
 
 .info>*:hover{
-    font-size: 105%;
+    font-size: 100%;
+    padding-top: 0px;
+    padding-bottom: 3px;
     cursor:text;
 }
 
@@ -195,6 +200,32 @@ hr{
     border-style: double;
 }
 
+.link_icon{
+    transition: opacity ease 0.2s;
+    opacity: 0.0;  
+}
+
+.md-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.md-header>*{
+    margin: 0px;
+}
+
+.md-header:hover> .link_icon{
+    opacity: 1.0;
+}
+
+.link_icon {
+    height: 30px;
+    padding: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
 @media only screen and (max-width: 12.99in) /* Mobile */
 {
     footer{
@@ -237,7 +268,6 @@ hr{
 {
     .left_panel{
         margin-right:49%; 
-        margin-left: 20px;
     }
 
     .left_panel .copy{
@@ -250,7 +280,6 @@ hr{
     
     .right_panel{
         margin-left:49%; 
-        margin-right: 20px;
     }
     
     .half-width{

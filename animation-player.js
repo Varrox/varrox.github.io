@@ -14,10 +14,12 @@ let play_id;
 const canvas = document.getElementById("donut-ascii-canvas");
 const text_display = document.getElementById("donut-ascii");
 
-canvas.width = animation_info.size_x;
-canvas.height = animation_info.size_y;
+if(canvas != null){
+    canvas.width = animation_info.size_x;
+    canvas.height = animation_info.size_y;
+}
 
-const ctx = canvas.getContext("2d");
+const ctx = canvas != null ? canvas.getContext("2d") : null;
 
 const ascii_chars = "@@@@@#%";
 
@@ -100,6 +102,8 @@ function create_ascii() {
 }
 
 async function play_animation(){
+    if(canvas == null) return;
+
     await create_ascii_frames();
     canvas.remove();
 

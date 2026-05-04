@@ -1,0 +1,30 @@
+.date{
+    font-size: 90%;
+    opacity: 50%;
+    float:right;
+}
+
+#blog_head>a{
+    float: right;
+    background-color: rgba(169, 169, 169, 0.35); 
+    padding: 7px; 
+    border-radius: 10px;
+}
+
+#blog_head>h3{
+    text-decoration: underline; 
+    text-align: start;
+}
+
+@media only screen and (max-width: 12.99in){ /* Mobile */
+    .date{
+        font-size: 55%;
+        font-weight:bold;
+    }
+}
+
+@media only screen and (min-width: 13in){
+    .date{
+        font-size: 90%;
+    }
+}

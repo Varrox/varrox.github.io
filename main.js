@@ -15,6 +15,11 @@ async function main() {
 
     setup_code_areas();
 	play_animation();
+
+	add_blogs();
+
+	const newest_blog = document.getElementById("newest-blog");
+	add_newest_blog(newest_blog);
 }
 
 let code_snips = {}

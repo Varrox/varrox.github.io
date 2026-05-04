@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="Styles/style.css">
         <link rel="stylesheet" href="Styles/code_highlights.css">
         <link rel="stylesheet" href="Styles/markdown.css">
+        <link rel="stylesheet" href="Styles/blog_style.css">
         <script src="main.js"></script>
         <script src="quick-links.js"></script>
         <script src="ascii-maker.js"></script>
@@ -14,6 +15,7 @@
         <script src="confetti.js"></script>
         <script src="markdown_linker.js"></script>
         <script src="markdown_interpreter.js"></script>
+        <script src="Blogs/blog_load.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     </head>
     <body>
@@ -25,7 +27,7 @@
 
             <div class="col_container" id="aboutme">
                 <div class="left_panel" style="margin:auto; margin-left: 0;">
-                    <h2>README.md</h2>
+                    <h2>WELCOME.md</h2>
                     <p>
                         Hello, my name is <span class="name"></span>, I am a <span class="age"></span> year old Godot game developer. <br>
                         I primarily work on FPS games and VR projects. <br>
@@ -49,6 +51,18 @@
                 </div>
             </div>
             
+            <hr>
+
+            <div id="newest-blog">
+                <div id="blog_head">
+                    <a href="blog.html">View All Blogs</a>
+                    <h3>My most recent blog post:</h3>
+                </div>
+                
+            </div>
+
+            <script src="Blogs/blog_load.js"></script>
+
             <hr>
 
             <div class="col_container" id="experience">
@@ -114,5 +128,4 @@
         </table>
         <a href="https://github.com/Varrox/varrox.github.io" target="_blank"><h6 style="margin-top: 40px; margin-bottom: 0px;"><span class="name"></span> 2026</h6></a>
     </footer>
-    
 </html>

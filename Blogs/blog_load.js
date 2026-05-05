@@ -1,12 +1,17 @@
 const blogs_container = document.getElementById("blogs");
 
 const blogs = [
+    //{ file : "Blogs/Files/israel.html", date : "2026-5-4" },
     { file : "Blogs/Files/hello.html", date : "2026-5-3" }
 ]
 
 async function add_blogs() {
+    if(blogs_container == null) return;
     for(let i = 0; i < blogs.length; i++){
         await add_blog(blogs[i], blogs_container);
+        if(i != blogs.length - 1){
+            blogs_container.appendChild(document.createElement("hr"))
+        }
     }
 }
 

@@ -14,12 +14,14 @@ async function main() {
     await apply_md();
 
     setup_code_areas();
-	play_animation();
+	await play_animation();
 
-	add_blogs();
+	await add_blogs();
 
 	const newest_blog = document.getElementById("newest-blog");
-	add_newest_blog(newest_blog);
+	await add_newest_blog(newest_blog);
+	
+	apply_image_expand();
 }
 
 let code_snips = {}

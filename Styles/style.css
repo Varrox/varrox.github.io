@@ -70,6 +70,10 @@ html, body{
     font-size: 120%;
 }
 
+h1, h2, h3, h4, h5, h6, p{
+    cursor: text;
+}
+
 body {
     position: relative;
 }
@@ -225,6 +229,22 @@ hr{
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 10px;
+}
+
+.expandable-image{
+    cursor: pointer;
+}
+
+.expandable-button-background{
+    border-style: none;
+    position:sticky;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+.expandable-button-image{
+    
 }
 
 @media only screen and (max-width: 12.99in) /* Mobile */

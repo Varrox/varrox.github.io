@@ -5,6 +5,7 @@ const links = {
     "youtube" : "https://youtube.com/@Varrox",
     "github" : "https://github.com/varrox",
     "bluesky" : "https://bsky.app/profile/varrox.bsky.social",
+    "discord" : "https://discord.gg/Jc3VyWqHPz",
     "Non-Existence" : "https://realbucketofchicken.github.io/nonexistance/",
     "femtanyl" : "https://soundcloud.com/femtanyl",
     "aphex-twin" : "https://soundcloud.com/richarddjames",

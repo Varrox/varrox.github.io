@@ -1,6 +1,7 @@
 const blogs_container = document.getElementById("blogs");
 
 const blogs = [
+    { file : "Blogs/Files/ascii-renderer-cpp.html", date : "2026-5-6"},
     //{ file : "Blogs/Files/israel.html", date : "2026-5-4" },
     { file : "Blogs/Files/hello.html", date : "2026-5-3" }
 ]

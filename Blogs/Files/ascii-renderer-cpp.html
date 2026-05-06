@@ -1,0 +1,30 @@
+<h3>Making the terminal display images</h3>
+
+<section class="col_container">
+<p style="margin-right: 40px;">
+    For the past year I've had a public repo on my github that is an 'ASCII-Renderer' made in python.
+    Over the past 2 days I have gone over the code and I done a complete rewrite in C++ and removed python package depedencies.<br>
+    I called it an 'ASCII-Renderer' because I had the original goal of generating ASCII art with it based off of images.
+    But I wasn't experienced enough at the time to do that, so I just ended up trying to rather just display images in the terminal directly.
+    When making it, I found out that ANSI exists. ANSI is a set of codes that allow you to add color printed text in the terminal.
+    ANSI also happens to have support for changing the background color of the text, allowing for the full space of the character to be colored.
+    This means that if you have two spaces, and give them an ANSI background, you will have a square of color, or a pixel. If you add enough of them, you will have a full image.<br>
+    So I got a python library for making easy ANSI codes, and I made the original version of the 'ASCII-Renderer'.
+    It worked, and I was happy with the results, and I decided it would be the first code I would publish on github publicly.<br>
+    The unfortunate thing about it though, was that I had no idea what I was doing. I used threads for rendering every single row of pixels,
+    numpy for generating X uv coordinates, and also many other random horrible code choices.<br>
+    For the past 2 days, I went back over my code, and I have removed those weird and bad code choices, upgraded to C++, and I have significantly improved performance.<br>
+    I can confidently say now that with the renderer, I can display full images in terminal at 60+ fps. It can also handle a decent resolution too considering it is the terminal.<br>
+    There has been a few projects that have already done this before, but I haven't seen many projects that have been standalone.<br>
+    I soon plan to switch out CPU rendering for GPU rendering with OpenGL, but so far I am happy about my results. <br>
+    <br>
+    Check out the github <a href="https://github.com/Varrox/ASCII-Renderer">here</a>!
+    <br>
+    <br>
+    Have a good day!!
+</p>
+<div>
+<img class="expandable-image" src="Assets\Images\blogs\ascii-renderer-cpp\preview.gif" width="600px" height="350px" style="margin-top: 2%; margin-bottom: auto;"><br>
+<img class="expandable-image" src="Assets\Images\blogs\ascii-renderer-cpp\preview2.gif" width="600px" height="350px" style="margin-top: 2%; margin-bottom: auto;"><br>
+</div>
+</section>

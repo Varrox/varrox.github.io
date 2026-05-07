@@ -24,29 +24,29 @@
 }
 
 @font-face {
-    font-family: consolas, monospace;
-    src: url("Styles/Fonts/CONSOLA.TTF");
+    font-family: consolas;
+    src: url(consolas/CONSOLA.ttf);
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: consolas, monospace;
-    src: url("Styles/Fonts/CONSOLAB.TTF");
+    font-family: consolas;
+    src: url(consolas/CONSOLAB.ttf);
     font-style: normal;
     font-weight: bold;
 }
 
 @font-face {
-    font-family: consolas, monospace;
-    src: url("Styles/Fonts/CONSOLAI.TTF");
+    font-family: consolas;
+    src: url(consolas/CONSOLAI.ttf);
     font-style: italic;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: consolas, monospace;
-    src: url("Styles/Fonts/CONSOLAZ.TTF");
+    font-family: consolas;
+    src: url(consolas/CONSOLAZ.ttf);
     font-style: italic;
     font-weight: bold;
 }

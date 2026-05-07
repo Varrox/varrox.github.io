@@ -22,3 +22,31 @@
     font-family: code-pink;
     src: url("Fonts/code_462w_pink/Code462WPink-Regular.ttf");
 }
+
+@font-face {
+    font-family: consolas, monospace;
+    src: url("Styles/Fonts/CONSOLA.TTF");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: consolas, monospace;
+    src: url("Styles/Fonts/CONSOLAB.TTF");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: consolas, monospace;
+    src: url("Styles/Fonts/CONSOLAI.TTF");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: consolas, monospace;
+    src: url("Styles/Fonts/CONSOLAZ.TTF");
+    font-style: italic;
+    font-weight: bold;
+}

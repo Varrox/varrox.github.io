@@ -9,6 +9,8 @@ const links = {
     "discord" : "https://discord.gg/Jc3VyWqHPz",
     "non-existence" : "https://non-existence.net/",
     "femtanyl" : "https://soundcloud.com/femtanyl",
+    "jane-remover" : "https://soundcloud.com/janeremover",
+    "machine-girl" : "https://soundcloud.com/machine-girl",
     "aphex-twin" : "https://soundcloud.com/richarddjames",
     "tyler-the-creator" : "https://soundcloud.com/tylerthecreatorofficial",
     "golemm" : "https://soundcloud.com/golemm/",
